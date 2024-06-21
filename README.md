@@ -35,13 +35,13 @@ to a state-machine. It looks something like:
     }
 ```
 
-No, you aren't suppose to be able to see how the word-count works
+No, you aren't supposed to be able to see how the word-count works
 by looking at this code. The complexity happens elsewhere, setting
 up the state-machine.
 
 The state-machine table is the difference between the simple version
 (`wc2o.c`) and complex version (`wc2.c`) of the program. The algorithm
-is the same, the one shown above, the difference is in how they setup
+is the same, the one shown above, the difference is in how they set up
 the table. The simple program creates a table for ASCII, the complex
 program creates a much larger table supporting UTF-8.
 
@@ -231,4 +231,3 @@ is faster.
 
 To test this, the `wc2.c` program has an option `-P` that makes this
 small change, to test the difference in speed.
-
